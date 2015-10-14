@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SportsPress for Football (Soccer)\n"
-"POT-Creation-Date: 2015-09-24 13:36+1000\n"
-"PO-Revision-Date: 2015-09-24 13:37+1000\n"
+"POT-Creation-Date: 2015-10-07 01:52+1000\n"
+"PO-Revision-Date: 2015-10-07 01:52+1000\n"
 "Last-Translator: Brian Miyaji <brian@themeboy.com>\n"
 "Language-Team: ThemeBoy <support@themeboy.com>\n"
 "Language: en_US\n"
@@ -19,40 +19,64 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: includes\n"
 
-#: sportspress-for-soccer.php:129
+#: sportspress-for-soccer.php:132
 msgid "Matches"
 msgstr ""
 
-#: sportspress-for-soccer.php:132
+#: sportspress-for-soccer.php:135
 msgid "Match"
 msgstr ""
 
-#: sportspress-for-soccer.php:135
+#: sportspress-for-soccer.php:138
 msgid "Add New Match"
 msgstr ""
 
-#: sportspress-for-soccer.php:138
+#: sportspress-for-soccer.php:141
 msgid "Edit Match"
 msgstr ""
 
-#: sportspress-for-soccer.php:141
+#: sportspress-for-soccer.php:144
 msgid "View Match"
 msgstr ""
 
-#: sportspress-for-soccer.php:144
+#: sportspress-for-soccer.php:147
 msgid "View all matches"
 msgstr ""
 
-#: sportspress-for-soccer.php:147
+#: sportspress-for-soccer.php:150
 msgid "Fields"
 msgstr ""
 
-#: sportspress-for-soccer.php:150
+#: sportspress-for-soccer.php:153
 msgid "Field"
 msgstr ""
 
-#: sportspress-for-soccer.php:153
+#: sportspress-for-soccer.php:156
 msgid "Edit Field"
+msgstr ""
+
+#: sportspress-for-soccer.php:159
+msgid "Clubs"
+msgstr ""
+
+#: sportspress-for-soccer.php:162
+msgid "Club"
+msgstr ""
+
+#: sportspress-for-soccer.php:165
+msgid "Add New Club"
+msgstr ""
+
+#: sportspress-for-soccer.php:168
+msgid "Edit Club"
+msgstr ""
+
+#: sportspress-for-soccer.php:171
+msgid "View Club"
+msgstr ""
+
+#: sportspress-for-soccer.php:174
+msgid "View all clubs"
 msgstr ""
 
 #, fuzzy

@@ -1,11 +1,14 @@
 <?php
 /*
-Plugin Name: SportsPress for Football (Soccer)
-Plugin URI: http://themeboy.com/
-Description: A suite of football (soccer) features for SportsPress.
-Author: ThemeBoy
-Author URI: http://themeboy.com/
-Version: 0.9.2
+ * Plugin Name: SportsPress for Football (soccer)
+ * Plugin URI: http://themeboy.com/
+ * Description: A suite of football (soccer) features for SportsPress.
+ * Author: ThemeBoy
+ * Author URI: http://themeboy.com/
+ * Version: 0.9.2
+ *
+ * Text Domain: sportspress-for-soccer
+ * Domain Path: /languages/
 */
 
 // Exit if accessed directly
@@ -126,49 +129,49 @@ class SportsPress_Soccer {
 		if ( $domain == 'sportspress' ) {
 			switch ( $untranslated_text ) {
 				case 'Events':
-					$translated_text = __( 'Matches', 'sportspress' );
+					$translated_text = __( 'Matches', 'sportspress-for-soccer' );
 					break;
 				case 'Event':
-					$translated_text = __( 'Match', 'sportspress' );
+					$translated_text = __( 'Match', 'sportspress-for-soccer' );
 					break;
 				case 'Add New Event':
-					$translated_text = __( 'Add New Match', 'sportspress' );
+					$translated_text = __( 'Add New Match', 'sportspress-for-soccer' );
 					break;
 				case 'Edit Event':
-					$translated_text = __( 'Edit Match', 'sportspress' );
+					$translated_text = __( 'Edit Match', 'sportspress-for-soccer' );
 					break;
 				case 'View Event':
-					$translated_text = __( 'View Match', 'sportspress' );
+					$translated_text = __( 'View Match', 'sportspress-for-soccer' );
 					break;
 				case 'View all events':
-					$translated_text = __( 'View all matches', 'sportspress' );
+					$translated_text = __( 'View all matches', 'sportspress-for-soccer' );
 					break;
 				case 'Venues':
-					$translated_text = __( 'Fields', 'sportspress' );
+					$translated_text = __( 'Fields', 'sportspress-for-soccer' );
 					break;
 				case 'Venue':
-					$translated_text = __( 'Field', 'sportspress' );
+					$translated_text = __( 'Field', 'sportspress-for-soccer' );
 					break;
 				case 'Edit Venue':
-					$translated_text = __( 'Edit Field', 'sportspress' );
+					$translated_text = __( 'Edit Field', 'sportspress-for-soccer' );
 					break;
 				case 'Teams':
-					$translated_text = __( 'Clubs', 'sportspress' );
+					$translated_text = __( 'Clubs', 'sportspress-for-soccer' );
 					break;
 				case 'Team':
-					$translated_text = __( 'Club', 'sportspress' );
+					$translated_text = __( 'Club', 'sportspress-for-soccer' );
 					break;
 				case 'Add New Team':
-					$translated_text = __( 'Add New Club', 'sportspress' );
+					$translated_text = __( 'Add New Club', 'sportspress-for-soccer' );
 					break;
 				case 'Edit Team':
-					$translated_text = __( 'Edit Club', 'sportspress' );
+					$translated_text = __( 'Edit Club', 'sportspress-for-soccer' );
 					break;
 				case 'View Team':
-					$translated_text = __( 'View Club', 'sportspress' );
+					$translated_text = __( 'View Club', 'sportspress-for-soccer' );
 					break;
 				case 'View all teams':
-					$translated_text = __( 'View all clubs', 'sportspress' );
+					$translated_text = __( 'View all clubs', 'sportspress-for-soccer' );
 					break;
 			}
 		}

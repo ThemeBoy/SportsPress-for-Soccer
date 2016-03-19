@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: SportsPress for Football (soccer)
+ * Plugin Name: SportsPress for Football (Soccer)
  * Plugin URI: http://themeboy.com/
  * Description: A suite of football (soccer) features for SportsPress.
  * Author: ThemeBoy
@@ -64,27 +64,28 @@ class SportsPress_Soccer {
 
 		update_post_meta( $id, 'sp_icon', 'soccerball' );
 		update_post_meta( $id, 'sp_color', '#d4000f' );
+		update_post_meta( $id, '_sp_preset', 1 );
 	}
 
 	/**
 	 * Define constants.
 	*/
 	private function define_constants() {
-		if ( !defined( 'SP_FOOTBALL_VERSION' ) )
-			define( 'SP_FOOTBALL_VERSION', '0.9.2' );
+		if ( !defined( 'SP_SOCCER_VERSION' ) )
+			define( 'SP_SOCCER_VERSION', '0.9.2' );
 
-		if ( !defined( 'SP_FOOTBALL_URL' ) )
-			define( 'SP_FOOTBALL_URL', plugin_dir_url( __FILE__ ) );
+		if ( !defined( 'SP_SOCCER_URL' ) )
+			define( 'SP_SOCCER_URL', plugin_dir_url( __FILE__ ) );
 
-		if ( !defined( 'SP_FOOTBALL_DIR' ) )
-			define( 'SP_FOOTBALL_DIR', plugin_dir_path( __FILE__ ) );
+		if ( !defined( 'SP_SOCCER_DIR' ) )
+			define( 'SP_SOCCER_DIR', plugin_dir_path( __FILE__ ) );
 	}
 
 	/**
 	 * Enqueue styles.
 	 */
 	public static function admin_enqueue_scripts() {
-		wp_enqueue_style( 'sportspress-soccer-admin', SP_FOOTBALL_URL . 'css/admin.css', array( 'sportspress-admin-menu-styles' ), '0.9' );
+		wp_enqueue_style( 'sportspress-soccer-admin', SP_SOCCER_URL . 'css/admin.css', array( 'sportspress-admin-menu-styles' ), '0.9' );
 	}
 
 	/**

@@ -5,7 +5,7 @@
  * Description: A suite of football (soccer) features for SportsPress.
  * Author: ThemeBoy
  * Author URI: http://themeboy.com/
- * Version: 0.9.3
+ * Version: 0.9.4
  *
  * Text Domain: sportspress-for-soccer
  * Domain Path: /languages/
@@ -20,7 +20,7 @@ if ( ! class_exists( 'SportsPress_Soccer' ) ) :
  * Main SportsPress Soccer Class
  *
  * @class SportsPress_Soccer
- * @version	0.9.3
+ * @version	0.9.4
  */
 class SportsPress_Soccer {
 
@@ -32,6 +32,9 @@ class SportsPress_Soccer {
 
 		// Define constants
 		$this->define_constants();
+		
+		// Load plugin text domain
+		add_action( 'init', array( $this, 'load_plugin_textdomain' ), 0 );
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ), 30 );
 		add_action( 'tgmpa_register', array( $this, 'require_core' ) );
@@ -72,13 +75,26 @@ class SportsPress_Soccer {
 	*/
 	private function define_constants() {
 		if ( !defined( 'SP_SOCCER_VERSION' ) )
-			define( 'SP_SOCCER_VERSION', '0.9.3' );
+			define( 'SP_SOCCER_VERSION', '0.9.4' );
 
 		if ( !defined( 'SP_SOCCER_URL' ) )
 			define( 'SP_SOCCER_URL', plugin_dir_url( __FILE__ ) );
 
 		if ( !defined( 'SP_SOCCER_DIR' ) )
 			define( 'SP_SOCCER_DIR', plugin_dir_path( __FILE__ ) );
+	}
+
+	/**
+	 * Load Localisation files.
+	 *
+	 * Note: the first-loaded translation file overrides any following ones if the same translation is present
+	 */
+	public function load_plugin_textdomain() {
+		$locale = apply_filters( 'plugin_locale', get_locale(), 'sportspress-for-soccer' );
+		
+		// Global + Frontend Locale
+		load_textdomain( 'sportspress-for-soccer', WP_LANG_DIR . "/sportspress-for-soccer/sportspress-for-soccer-$locale.mo" );
+		load_plugin_textdomain( 'sportspress-for-soccer', false, plugin_basename( dirname( __FILE__ ) . "/languages" ) );
 	}
 
 	/**

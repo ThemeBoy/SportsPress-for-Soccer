@@ -164,13 +164,13 @@ class SportsPress_Soccer {
 					$translated_text = __( 'View all matches', 'sportspress-for-soccer' );
 					break;
 				case 'Venues':
-					$translated_text = __( 'Fields', 'sportspress-for-soccer' );
+					$translated_text = __( 'Grounds', 'sportspress-for-soccer' );
 					break;
 				case 'Venue':
-					$translated_text = __( 'Field', 'sportspress-for-soccer' );
+					$translated_text = __( 'Ground', 'sportspress-for-soccer' );
 					break;
 				case 'Edit Venue':
-					$translated_text = __( 'Edit Field', 'sportspress-for-soccer' );
+					$translated_text = __( 'Edit Ground', 'sportspress-for-soccer' );
 					break;
 				case 'Teams':
 					$translated_text = __( 'Clubs', 'sportspress-for-soccer' );

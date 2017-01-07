@@ -226,9 +226,9 @@ class SportsPress_Soccer {
 				$option = sp_get_main_performance_option();
 				$goals = sp_array_value( $performance, $option, 0 );
 				if ( $goals ) {
-					$data[ $id ][ 'goals' ] = $goals . ', ' . $owngoals . ' ' . get_option( 'sportspress_own_goals_notation', 'OG' );
+					$data[ $id ][ $option ] = $goals . ', ' . $owngoals . ' ' . get_option( 'sportspress_own_goals_notation', 'OG' );
 				} else {
-					$data[ $id ][ 'goals' ] = $owngoals . ' ' . get_option( 'sportspress_own_goals_notation', 'OG' );
+					$data[ $id ][ $option ] = $owngoals . ' ' . get_option( 'sportspress_own_goals_notation', 'OG' );
 				}
 			}
 		}

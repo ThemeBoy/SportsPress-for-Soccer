@@ -3,8 +3,8 @@ Contributors: ThemeBoy, brianmiyaji, aylaview
 Tags: sport, sports, players, statistics, stats, data, fixtures, results, standings, football, football club, soccer
 Donate link: http://tboy.co/donate
 Requires at least: 3.8
-Tested up to: 4.4
-Stable tag: 0.9.4
+Tested up to: 4.7
+Stable tag: 0.9.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -83,6 +83,10 @@ Yes; SportsPress for Football will work with any theme, but may require some sty
 Yes, CSV importers are included with the core SportsPress plugin. Go to Tools > Import and choose from one of the SportsPress CSV importers.
 
 == Changelog ==
+
+= 0.9.5 =
+* Tweak - Use primary player performance option to append own goals.
+* Tweak - Change fields to grounds.
 
 = 0.9.4 =
 * Localization - Enable loading translation files from directory.

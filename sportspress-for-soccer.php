@@ -5,7 +5,7 @@
  * Description: A suite of football (soccer) features for SportsPress.
  * Author: ThemeBoy
  * Author URI: http://themeboy.com/
- * Version: 0.9.4
+ * Version: 0.9.5
  *
  * Text Domain: sportspress-for-soccer
  * Domain Path: /languages/
@@ -20,7 +20,7 @@ if ( ! class_exists( 'SportsPress_Soccer' ) ) :
  * Main SportsPress Soccer Class
  *
  * @class SportsPress_Soccer
- * @version	0.9.4
+ * @version	0.9.5
  */
 class SportsPress_Soccer {
 
@@ -67,6 +67,8 @@ class SportsPress_Soccer {
 
 		update_post_meta( $id, 'sp_icon', 'soccerball' );
 		update_post_meta( $id, 'sp_color', '#d4000f' );
+		update_post_meta( $id, 'sp_singular', 'Own Goal' );
+		update_post_meta( $id, 'sp_timed', 1 );
 		update_post_meta( $id, '_sp_preset', 1 );
 	}
 
@@ -75,7 +77,7 @@ class SportsPress_Soccer {
 	*/
 	private function define_constants() {
 		if ( !defined( 'SP_SOCCER_VERSION' ) )
-			define( 'SP_SOCCER_VERSION', '0.9.4' );
+			define( 'SP_SOCCER_VERSION', '0.9.5' );
 
 		if ( !defined( 'SP_SOCCER_URL' ) )
 			define( 'SP_SOCCER_URL', plugin_dir_url( __FILE__ ) );

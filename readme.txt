@@ -4,7 +4,7 @@ Tags: sport, sports, players, statistics, stats, data, fixtures, results, standi
 Donate link: http://tboy.co/donate
 Requires at least: 3.8
 Tested up to: 4.7
-Stable tag: 0.9.5
+Stable tag: 0.9.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -30,9 +30,11 @@ SportsPress for Football is currently in Beta. Please feel free to share your fe
 Looking for more advanced football functionality? Upgrade to [SportsPress Pro](http://tboy.co/pro) to get access to more advanced features for your football club website.
 
 = SportsPress Themes for Clubs =
+* [Courtside](http://tboy.co/courtside)
 * [Football Club](http://tboy.co/fc)
 * [Premier](http://tboy.co/premier)
 * [Emblem](http://tboy.co/emblem)
+* [Marquee](http://tboy.co/marquee)
 
 = Please Rate, Vote, and Enjoy! =
 Your feedback is much appreciated and makes all the difference in improving SportsPress for Football.
@@ -83,6 +85,11 @@ Yes; SportsPress for Football will work with any theme, but may require some sty
 Yes, CSV importers are included with the core SportsPress plugin. Go to Tools > Import and choose from one of the SportsPress CSV importers.
 
 == Changelog ==
+
+= 0.9.6 =
+* Feature - Option to translate OG notation added to text settings.
+* Tweak - Update TGMPA library.
+* Fix - Prevent sport preset from removing red card setting during setup.
 
 = 0.9.5 =
 * Tweak - Use primary player performance option to append own goals.

@@ -69,7 +69,6 @@ class SportsPress_Soccer {
 		update_post_meta( $id, 'sp_color', '#d4000f' );
 		update_post_meta( $id, 'sp_singular', 'Own Goal' );
 		update_post_meta( $id, 'sp_timed', 1 );
-		update_post_meta( $id, '_sp_preset', 1 );
 	}
 
 	/**

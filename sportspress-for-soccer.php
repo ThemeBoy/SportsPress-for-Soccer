@@ -40,6 +40,7 @@ class SportsPress_Soccer {
 		add_action( 'tgmpa_register', array( $this, 'require_core' ) );
 
 		add_filter( 'gettext', array( $this, 'gettext' ), 20, 3 );
+		add_filter( 'sportspress_text', array( $this, 'add_text_options' ) );
 		add_filter( 'sportspress_event_box_score_labels', array( $this, 'box_score_labels' ), 10, 3 );
 		add_filter( 'sportspress_match_stats_labels', array( $this, 'stats_labels' ) );
 		add_filter( 'sportspress_event_performance_players', array( $this, 'players' ), 10, 4 );
@@ -198,6 +199,15 @@ class SportsPress_Soccer {
 	}
 
 	/**
+	 * Add text options 
+	 */
+	public function add_text_options( $options = array() ) {
+		return array_merge( $options, array(
+			__( 'OG', 'sportspress' ),
+		) );
+	}
+
+	/**
 	 * Hide own goals from box score.
 	*/
 	public function box_score_labels( $labels = array(), $event = null, $mode = 'values' ) {
@@ -227,9 +237,9 @@ class SportsPress_Soccer {
 				$option = sp_get_main_performance_option();
 				$goals = sp_array_value( $performance, $option, 0 );
 				if ( $goals ) {
-					$data[ $id ][ $option ] = $goals . ', ' . $owngoals . ' ' . get_option( 'sportspress_own_goals_notation', 'OG' );
+					$data[ $id ][ $option ] = $goals . ', ' . $owngoals . ' ' . __( 'OG', 'sportspress' );
 				} else {
-					$data[ $id ][ $option ] = $owngoals . ' ' . get_option( 'sportspress_own_goals_notation', 'OG' );
+					$data[ $id ][ $option ] = $owngoals . ' ' . __( 'OG', 'sportspress' );
 				}
 			}
 		}

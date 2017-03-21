@@ -45,6 +45,9 @@ class SportsPress_Soccer {
 		add_filter( 'sportspress_match_stats_labels', array( $this, 'stats_labels' ) );
 		add_filter( 'sportspress_event_performance_players', array( $this, 'players' ), 10, 4 );
 
+		// Define default sport
+		add_filter( 'sportspress_default_sport', array( $this, 'default_sport' ) );
+
 		// Include required files
 		$this->includes();
 	}
@@ -122,6 +125,7 @@ class SportsPress_Soccer {
 				'name'        => 'SportsPress',
 				'slug'        => 'sportspress',
 				'required'    => true,
+				'version'     => '2.3',
 				'is_callable' => array( 'SportsPress', 'instance' ),
 			),
 		);
@@ -245,6 +249,13 @@ class SportsPress_Soccer {
 		}
 
 		return $data;
+	}
+
+	/**
+	 * Define default sport.
+	*/
+	public function default_sport() {
+		return 'soccer';
 	}
 }
 

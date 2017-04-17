@@ -88,6 +88,7 @@ Yes, CSV importers are included with the core SportsPress plugin. Go to Tools > 
 
 = 0.9.6 =
 * Feature - Option to translate OG notation added to text settings.
+* Feature - Apply default sport setting for smoother installation.
 * Tweak - Update TGMPA library.
 * Fix - Prevent sport preset from removing red card setting during setup.
 

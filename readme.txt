@@ -3,7 +3,7 @@ Contributors: ThemeBoy, brianmiyaji, aylaview
 Tags: sport, sports, players, statistics, stats, data, fixtures, results, standings, football, football club, soccer
 Donate link: http://tboy.co/donate
 Requires at least: 3.8
-Tested up to: 4.7
+Tested up to: 5.2
 Stable tag: 0.9.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
